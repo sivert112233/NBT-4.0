@@ -80,7 +80,7 @@ button:hover {
   display: grid;
   grid-template-rows: 1fr 4fr 0.5fr;
   height: 80%;
-  min-height: 500px;
+  min-height: 400px;
   background-color: #8d0a73;
   padding: 10px;
   z-index: -1;
