@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess Location Page</title>
-  </head>
-  <body>
-    <p>Guess Location Page</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/guessLocationPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Guess Location Page</title>
+</head>
+
+<body>
+  <header class="topNavBar">
+    <img class="topNavBar-logo" alt="Logo" src="https://nbt.no/wp-content/uploads/2019/12/ntb-logo-pos-1.svg">
+    <button class="iconButton js-iconButton">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div id="myLinks">
+      <a class="js-guessLocation">Hyllelokasjon</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About the page</a>
+    </div>
+  </header>
+  <section class="bookGuessing">
+    <div class="output js-output-book-code-resulet">
+      <p>Hyllelokasjon</p>
+    </div>
+    <div class="inputs">
+      <div class="input-left">
+        <div class="input-left-bottom">
+          <button class="bookButtons bookButtonsL js-bookButtons" id="bottomLeft"></button>
+        </div>
+        <div class="input-left-top">
+          <button class="bookButtons bookButtonsL js-bookButtons" id="topLeftBack"></button>
+          <button class="bookButtons bookButtonsL js-bookButtons" id="topLeftFront"></button>
+        </div>
+      </div>
+      <div class="input-right">
+        <div class="input-right-top">
+          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightBack"></button>
+          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightMiddle"></button>
+          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightFornt"></button>
+        </div>
+        <div class="input-right-bottom">
+          <button class="bookButtons bookButtonsR js-bookButtons" id="bottomRight"></button>
+        </div>
+      </div>
+    </div>
+    <div class="get-book-box js-get-book-box">
+      <button class="get-book-button js-get-book-button"></button>
+    </div>
+  </section>
+  <script type="module" src="script/guessLocationPage.js"></script>
+</body>
+
 </html>

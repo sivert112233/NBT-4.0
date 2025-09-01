@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  margin: 0;
+}
+
+P:hover {
+  cursor: default;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.topNavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  background-color: #ffffff;
+
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.topNavBar-logo {
+  height: 60px;
+  margin: 20px;
+}
+
+.topNavBar #myLinks {
+  display: none;
+}
+
+.iconButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  background-color: #8d0a73;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 17px;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.topNavBar a {
+  display: block;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.topNavBar a:hover {
+  background-color: #8d0a73;
+  color: white;
+}
+
+
+.bookGuessing {
+  position: relative;
+  top: 100px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr 4fr 0.5fr;
+  height: 80%;
+  min-height: 700px;
+  background-color: #8d0a73;
+  padding: 10px;
+  z-index: -1;
+}
+
+.output {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.input-left {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.input-left-top {
+  position: relative;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 10px;
+  height: 90%;
+  justify-content: center;
+}
+
+.input-left-bottom {
+  position: relative;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+}
+
+.input-right {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.input-right-top {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  height: 90%;
+}
+
+.input-right-bottom {
+  height: 90%;
+}
+
+.get-book-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.bookButtons {
+  height: 100%;
+  width: 30px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.515);
+  background-color: #ffb300;
+  color: #000000;
+  border: 0;
+}
+
+.get-book-button {
+  background-color: #ffb300;
+  color: #000000;
+  height: 50%;
+  width: 40%;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.485);
+}
+
+.bookButtonsRight {
+  background-color: rgb(16, 117, 16);
+  color: white;
+}
+
+.bookButtonsWrong {
+  background-color: rgb(201, 17, 17);
+  color: white;
+}
+
+.resultDisplayColorRight {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(16, 117, 16);
+}
+
+.resultDisplayColorWrong {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(201, 17, 17);
+}
