@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startside</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style/index.css">
-</head>
-
-<body>
-  <header class="topNavBar">
-    <img class="topNavBar-logo" alt="Logo" src="https://nbt.no/wp-content/uploads/2019/12/ntb-logo-pos-1.svg">
-    <button class="iconButton js-iconButton">
-      <i class="fa fa-bars"></i>
-    </button>
-    <div id="myLinks">
-      <a class="js-guessLocation">Hyllelokasjon</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About the page</a>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a class="js-closeBtn" >&times</a>
+      <div class="overlay-content">
+        <a href="guessLocationPage.html">Guess Book Page</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
-  </header>
-  <script src="script/index.js"></script>
-</body>
-
+    <header class="fixedTopHeader">
+      <img class="fixedTopHeaderLogo" alt="Logo" src="https://nbt.no/wp-content/uploads/2019/12/ntb-logo-pos-1.svg">
+      <span class="fixedTopHeaderMenu js-fixedTopHeaderMenu">&#9776</span>
+    </header>
+    <script src="script/index.js"></script>
+  </body>
 </html>

@@ -1,17 +1,7 @@
-document.querySelector('.js-iconButton').addEventListener('click', () => {
-  myFunction();
+document.querySelector('.js-fixedTopHeaderMenu').addEventListener('click', () => {
+  document.getElementById("myNav").style.height = "100%";
 });
-
-document.querySelector('.js-guessLocation').addEventListener('click', () => {
-  window.location.href = 'guessLocationPage.html';
+document.querySelector('.js-closeBtn').addEventListener('click', () => {
+  document.getElementById("myNav").style.height = "0%";
 })
 
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none"
-  } else {
-    x.style.display = "block";
-  }
-}
