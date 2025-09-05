@@ -1,18 +1,6 @@
 import {BookLocationCodes} from "./bookList.js";
 
 
-document.querySelector('.js-iconButton').addEventListener('click', () => {
-  myFunction();
-});
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none"
-  } else {
-    x.style.display = "block";
-  }
-}
 
 export class GuessShelfLocation{
   constructor() {
@@ -101,10 +89,7 @@ export class GuessShelfLocation{
         output.innerHTML = randomBook.toString().replace(/\B(?=(\d{4})+(?!\d))/g, " ");
       }
     }
-    document.querySelector('.js-get-book-button').addEventListener('click', () => { 
-      getRandomBookAndResetColor();
-    });  
-
+    
     document.querySelectorAll('.js-bookButtons').forEach((button) => {
       button.addEventListener('click', () => {
         console.log(allBooks.length);
@@ -137,6 +122,7 @@ export class GuessShelfLocation{
         this.displayScore();
       });
     });
+    getRandomBookAndResetColor();
   }
 }
 new GuessShelfLocation().runCodeAndRenderPage();

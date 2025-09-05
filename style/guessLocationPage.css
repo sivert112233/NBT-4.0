@@ -25,53 +25,35 @@ P:hover {
 button:hover {
   cursor: pointer;
 }
-
-.topNavBar {
+a{
+  text-decoration: none;
+  color: #8d0a73;
+}
+.fixedTopHeader{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  display: grid;
-  background-color: #ffffff;
-
-  box-shadow: 0px 0px 5px 0px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.388);
 }
-
-.topNavBar-logo {
+.fixedTopHeaderLogo{
   height: 60px;
-  margin: 20px;
-}
-
-.topNavBar #myLinks {
-  display: none;
-}
-
-.iconButton {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border: none;
-  background-color: #8d0a73;
-  color: #ffffff;
-  padding: 16px;
-  font-size: 17px;
-  box-shadow: 0px 0px 5px 0px black;
-}
-
-.topNavBar a {
-  display: block;
-  margin: auto;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-size: 17px;
   padding: 20px;
+  object-fit: contain;
+}
+.fixedTopHeaderMenu{
+  color: rgb(158, 0, 126);
+  cursor: pointer;
+  transform: scale(1.5);
+  font-weight: 1000;
+  padding-right: 25px;
 }
 
-.topNavBar a:hover {
-  background-color: #8d0a73;
-  color: white;
-}
+
 
 
 .bookGuessing {
@@ -81,10 +63,9 @@ button:hover {
   display: grid;
   grid-template-rows: 1fr 4fr 0.5fr;
   height: 80%;
-  min-height: 400px;
+  min-height: 550px;
   background-color: #8d0a73;
   padding: 10px;
-  z-index: -1;
 }
 
 .output {
@@ -162,6 +143,7 @@ button:hover {
   height: 100%;
   width: 30px;
   border-radius: 3px;
+  font-weight: 400;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.515);
   background-color: #ffb300;
   color: #000000;

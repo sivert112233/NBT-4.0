@@ -5,22 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/guessLocationPage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Guess Location Page</title>
 </head>
 
 <body>
-  <header class="topNavBar">
-    <img class="topNavBar-logo" alt="Logo" src="https://nbt.no/wp-content/uploads/2019/12/ntb-logo-pos-1.svg">
-    <button class="iconButton js-iconButton">
-      <i class="fa fa-bars"></i>
-    </button>
-    <div id="myLinks">
-      <a class="js-guessLocation">Hyllelokasjon</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About the page</a>
-    </div>
+  <header class="fixedTopHeader">
+    <img class="fixedTopHeaderLogo" alt="Logo" src="https://nbt.no/wp-content/uploads/2019/12/ntb-logo-pos-1.svg">
+    <span class="fixedTopHeaderMenu js-fixedTopHeaderMenu"><a href="index.html">Home</a></span>
   </header>
+
+
+
+  
   <section class="bookGuessing">
     <div class="output js-output-book-code-resulet">
       <p>Hyllelokasjon</p>
@@ -28,21 +24,21 @@
     <div class="inputs">
       <div class="input-left">
         <div class="input-left-bottom">
-          <button class="bookButtons bookButtonsL js-bookButtons" id="bottomLeft"></button>
+          <button class="bookButtons bookButtonsL js-bookButtons" id="bottomLeft">1</button>
         </div>
         <div class="input-left-top">
-          <button class="bookButtons bookButtonsL js-bookButtons" id="topLeftBack"></button>
-          <button class="bookButtons bookButtonsL js-bookButtons" id="topLeftFront"></button>
+          <button class="bookButtons bookButtonsL js-bookButtons" id="topLeftBack">2</button>
+          <button class="bookButtons bookButtonsL js-bookButtons" id="topLeftFront">3</button>
         </div>
       </div>
       <div class="input-right">
         <div class="input-right-top">
-          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightBack"></button>
-          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightMiddle"></button>
-          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightFornt"></button>
+          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightBack">4</button>
+          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightMiddle">5</button>
+          <button class="bookButtons bookButtonsR js-bookButtons" id="topRightFornt">6</button>
         </div>
         <div class="input-right-bottom">
-          <button class="bookButtons bookButtonsR js-bookButtons" id="bottomRight"></button>
+          <button class="bookButtons bookButtonsR js-bookButtons" id="bottomRight">7</button>
         </div>
       </div>
     </div>
