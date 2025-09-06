@@ -9,18 +9,26 @@
 </head>
 
 <body>
+  <div id="myNav" class="overlay">
+    <a class="js-closeBtn" >&times</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>       
+      <a href="#">Contact</a>
+    </div>
+  </div>
   <header class="fixedTopHeader">
     <img class="fixedTopHeaderLogo" alt="Logo" src="https://nbt.no/wp-content/uploads/2019/12/ntb-logo-pos-1.svg">
-    <span class="fixedTopHeaderMenu js-fixedTopHeaderMenu"><a href="index.html">Home</a></span>
+    <span class="fixedTopHeaderMenu js-fixedTopHeaderMenu">&#9776</span>
   </header>
 
-
-
-  
   <section class="bookGuessing">
+    <img class="bookGuessingBackgrooundPic" src="pic/3.jpeg">
     <div class="output js-output-book-code-resulet">
-      <p>Hyllelokasjon</p>
+      <p class="js-get-book-box"></p>
     </div>
+
     <div class="inputs">
       <div class="input-left">
         <div class="input-left-bottom">
@@ -41,9 +49,6 @@
           <button class="bookButtons bookButtonsR js-bookButtons" id="bottomRight">7</button>
         </div>
       </div>
-    </div>
-    <div class="get-book-box js-get-book-box">
-      <button class="get-book-button js-get-book-button"></button>
     </div>
   </section>
   <script src="script/guessLocationPage.js" type="module"></script>

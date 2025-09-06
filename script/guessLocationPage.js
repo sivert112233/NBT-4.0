@@ -1,5 +1,11 @@
 import {BookLocationCodes} from "./bookList.js";
 
+document.querySelector('.js-fixedTopHeaderMenu').addEventListener('click', () => {
+  document.getElementById("myNav").style.height = "100%";
+});
+document.querySelector('.js-closeBtn').addEventListener('click', () => {
+  document.getElementById("myNav").style.height = "0%";
+})
 
 
 export class GuessShelfLocation{
@@ -23,6 +29,7 @@ export class GuessShelfLocation{
     console.log(this.wrongGuesses);
   }
   displayScore(){
+
     return document.querySelector('.js-output-book-code-resulet').innerHTML = `
     <p class="resultDisplayColorRight">Riktig: ${this.rightGuesses}</p>
     <p class="resultDisplayColorWrong">Feil: ${this.wrongGuesses}</p>
@@ -89,7 +96,7 @@ export class GuessShelfLocation{
         output.innerHTML = randomBook.toString().replace(/\B(?=(\d{4})+(?!\d))/g, " ");
       }
     }
-    
+
     document.querySelectorAll('.js-bookButtons').forEach((button) => {
       button.addEventListener('click', () => {
         console.log(allBooks.length);
@@ -119,7 +126,6 @@ export class GuessShelfLocation{
           this.setScore(guess);
           this.addColorToButtons(button.id, guess);
         }
-        this.displayScore();
       });
     });
     getRandomBookAndResetColor();
